@@ -83,9 +83,15 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="总结了一下css中关于居中的问题"><a href="#总结了一下css中关于居中的问题" class="headerlink" title="总结了一下css中关于居中的问题"></a>总结了一下<code>css</code>中关于居中的问题</h3><ul>
-<li>给子绝对定位，父盒子相对定位。在给子盒子设置：top:50% left:50% 让子盒子走父盒子的一半，</li>
-</ul>
+        <h4 id="总结了一些css中常见的关于居中的问题"><a href="#总结了一些css中常见的关于居中的问题" class="headerlink" title="总结了一些css中常见的关于居中的问题"></a>总结了一些<code>css</code>中常见的关于居中的问题</h4><ol>
+<li><p>子盒子居中问题</p>
+<ol>
+<li>想要让一个子盒子在父盒子中居中显示，给父子盒子都设置定位，子绝父相，再给子盒子设置：<code>top:50% left:50%</code> 让子盒子走父盒子的一半，然后在让子盒子走自己宽高的一半，通过<code>margin-left、margin-right</code>.但是这种方法局限性强，不能灵活写数值.</li>
+<li>利用css3中伸缩盒子的属性：<code>display:flex</code>.在给子盒子设置<code>margin:auto</code>.子盒子自动居中，随意改变盒子的值都可以，这个方法比较灵活。</li>
+<li>利用css3中<code>transform</code>这个属性，同1：父子盒子都设置定位，子绝父相， 再给子盒子设置：<code>top:50% left:50%</code>,<br>在给子盒子设置transform:translate(-50%,-50%)，利用这个属性让子盒子走自己宽高的一半。 </li>
+</ol>
+</li>
+</ol>
 
       
     </div>
