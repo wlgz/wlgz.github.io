@@ -99,23 +99,17 @@
  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">var num = 1;</div><div class="line">use strict</div><div class="line"> 或</div><div class="line">function () &#123;</div><div class="line"> ;</div><div class="line"> `use strict`</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>注意:<code>use strict</code>前加注释是可以的。</p>
 <h3 id="二、-严格模式下的执行限制"><a href="#二、-严格模式下的执行限制" class="headerlink" title="二、 严格模式下的执行限制"></a>二、 严格模式下的执行限制</h3></li>
-<li><p>因为js是弱类型的语言,不适用var声明的变量默认转为全局变量.但在严格模式中将不允许,会报语法错误。<br>1.例:</p>
+<li><p>因为js是弱类型的语言,不适用var声明的变量默认转为全局变量.但在严格模式中将不允许,会报语法错误。<br>1)例:</p>
    <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">use strict</div><div class="line">index = 10;</div></pre></td></tr></table></figure>
-<p>   执行后会报语法错误。</p>
-<ol>
-<li><p>eval作用域：js中作用域有两种,全局作用域和函数作用域。严格模式带来了第三种作用域:eval作用域,如下</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">use strict</div><div class="line">var a = 10;</div><div class="line">eval(&apos;var a =10; console.log(a)&apos;);</div><div class="line">console.log(a);</div></pre></td></tr></table></figure>
-<p> 控制台一次输出20,10。eval是在全局模式下的,如果不加严格模式,此时修改的是全局a.即输出20,20.</p>
-</li>
-<li><p>caller/callee被禁用</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">function demo () &#123;</div><div class="line">    use strict</div><div class="line">    arguments.callee</div><div class="line">    arguments.caller</div><div class="line">&#125;</div><div class="line">demo()</div></pre></td></tr></table></figure>
-<p>会出现报错。</p>
-<ol>
-<li>对象有重名的属性将报错、函数有重名的参数将报错</li>
-<li>arguments严格定义为参数，不再与形参绑定call/apply的第一个参数直接传入不包装为对象。</li>
-</ol>
-</li>
-</ol>
+<p>   执行后会报语法错误。<br>2) eval作用域：js中作用域有两种,全局作用域和函数作用域。严格模式带来了第三种作用域:eval作用域,如下</p>
+   <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">use strict</div><div class="line">var a = 10;</div><div class="line">eval(&apos;var a =10; console.log(a)&apos;);</div><div class="line">console.log(a);</div></pre></td></tr></table></figure>
+<pre><code>控制台一次输出20,10。eval是在全局模式下的,如果不加严格模式,此时修改的是全局a.即输出20,20.
+</code></pre><p>3) caller/callee被禁用</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">function demo () &#123;</div><div class="line">    use strict</div><div class="line">    arguments.callee</div><div class="line">    arguments.caller</div><div class="line">&#125;</div><div class="line">demo()</div></pre></td></tr></table></figure>
+<p> 会出现报错。<br> 4) 对象有重名的属性将报错、函数有重名的参数将报错<br> 5) arguments严格定义为参数，不再与形参绑定call/apply的第一个参数直接传入不包装为对象。</p>
+<ul>
+<li>还有很多语法规范,需要的可以另行查找.</li>
+</ul>
 </li>
 </ul>
 
