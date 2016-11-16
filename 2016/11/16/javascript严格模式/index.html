@@ -3,39 +3,27 @@
 <head>
   <meta charset="utf-8">
   
-  <title>git基础命令 | Wyp_blog</title>
+  <title>javascript严格模式 | Wyp_blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="因为git是基于node的工具，所以需要先在cmd中查看安装了node npm没有，通过命令 node -v和 npm -v查看；
-pwd  查看当前工作目录
-git clone +c仓库地址 克隆一个仓库
-git init 初始化一个仓库
-git status 查看当前工作树状态
-git add 文件名 将操作文件添加到暂存区
-git add -A 将全部修改的文件全部提交到暂存区
-git c">
+  <meta name="description" content="严格模式是由ECMA规范定义的新兴Javascript标准,第五版发布于2009年12月,为在改善错误检查功能并且标识可能不会延续到未来的js脚本.ES5严格模式是限制性更强的Javascript变体,它与常规Javascript的语义不同,其分析更为严格。
+目前,除了IE6—9,其他浏览器均已支持ES严格模式。
+一、严格模式的使用
+严格模式的使用很简单,只有在代码首部加入字符串use stri">
 <meta property="og:type" content="article">
-<meta property="og:title" content="git基础命令">
-<meta property="og:url" content="http://yoursite.com/2016/10/04/git使用入门/index.html">
+<meta property="og:title" content="javascript严格模式">
+<meta property="og:url" content="http://yoursite.com/2016/11/16/javascript严格模式/index.html">
 <meta property="og:site_name" content="Wyp_blog">
-<meta property="og:description" content="因为git是基于node的工具，所以需要先在cmd中查看安装了node npm没有，通过命令 node -v和 npm -v查看；
-pwd  查看当前工作目录
-git clone +c仓库地址 克隆一个仓库
-git init 初始化一个仓库
-git status 查看当前工作树状态
-git add 文件名 将操作文件添加到暂存区
-git add -A 将全部修改的文件全部提交到暂存区
-git c">
-<meta property="og:updated_time" content="2016-11-13T14:47:29.218Z">
+<meta property="og:description" content="严格模式是由ECMA规范定义的新兴Javascript标准,第五版发布于2009年12月,为在改善错误检查功能并且标识可能不会延续到未来的js脚本.ES5严格模式是限制性更强的Javascript变体,它与常规Javascript的语义不同,其分析更为严格。
+目前,除了IE6—9,其他浏览器均已支持ES严格模式。
+一、严格模式的使用
+严格模式的使用很简单,只有在代码首部加入字符串use stri">
+<meta property="og:updated_time" content="2016-11-16T10:44:21.260Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="git基础命令">
-<meta name="twitter:description" content="因为git是基于node的工具，所以需要先在cmd中查看安装了node npm没有，通过命令 node -v和 npm -v查看；
-pwd  查看当前工作目录
-git clone +c仓库地址 克隆一个仓库
-git init 初始化一个仓库
-git status 查看当前工作树状态
-git add 文件名 将操作文件添加到暂存区
-git add -A 将全部修改的文件全部提交到暂存区
-git c">
+<meta name="twitter:title" content="javascript严格模式">
+<meta name="twitter:description" content="严格模式是由ECMA规范定义的新兴Javascript标准,第五版发布于2009年12月,为在改善错误检查功能并且标识可能不会延续到未来的js脚本.ES5严格模式是限制性更强的Javascript变体,它与常规Javascript的语义不同,其分析更为严格。
+目前,除了IE6—9,其他浏览器均已支持ES严格模式。
+一、严格模式的使用
+严格模式的使用很简单,只有在代码首部加入字符串use stri">
   
     <link rel="alternate" href="/atom.xml" title="Wyp_blog" type="application/atom+xml">
   
@@ -84,10 +72,10 @@ git c">
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-git使用入门" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-javascript严格模式" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2016/10/04/git使用入门/" class="article-date">
-  <time datetime="2016-10-04T08:49:39.000Z" itemprop="datePublished">2016-10-04</time>
+    <a href="/2016/11/16/javascript严格模式/" class="article-date">
+  <time datetime="2016-11-16T10:32:30.000Z" itemprop="datePublished">2016-11-16</time>
 </a>
     
   </div>
@@ -98,7 +86,7 @@ git c">
         
   
     <h1 class="article-title" itemprop="name">
-      git基础命令
+      javascript严格模式
     </h1>
   
 
@@ -107,28 +95,21 @@ git c">
     <div class="article-entry" itemprop="articleBody">
       
         <ul>
-<li>因为git是基于node的工具，所以需要先在cmd中查看安装了node npm没有，通过命令 node -v和 npm -v查看；</li>
-<li>pwd  查看当前工作目录</li>
-<li>git clone +c仓库地址 克隆一个仓库</li>
-<li>git init 初始化一个仓库</li>
-<li>git status 查看当前工作树状态</li>
-<li>git add 文件名 将操作文件添加到暂存区</li>
-<li>git add -A 将全部修改的文件全部提交到暂存区</li>
-<li>git commit -m ‘提交日志’  添加提交日志并提交到本地仓库</li>
-<li>git log 查看提交日志</li>
-<li>git push 仓库地址 分支 将本地仓库的相应分支文件添加到远程仓库</li>
-<li>git pull 仓库地址 分支 将远程仓库相应的文件从远程仓库拿下来</li>
-<li>git branch 查看分支</li>
-<li>git branch 名字 创建相应的分支</li>
-<li>git checkout 名字 切换到相应的分支</li>
-<li>git config –global user.name ‘用户名’  设置用户名</li>
-<li>git config –global user.email ‘邮箱’   设置邮箱</li>
+<li>严格模式是由ECMA规范定义的新兴Javascript标准,第五版发布于2009年12月,为在改善错误检查功能并且标识可能不会延续<br>到未来的js脚本.ES5严格模式是限制性更强的Javascript变体,它与常规Javascript的语义不同,其分析更为严格。</li>
+<li><p>目前,除了IE6—9,其他浏览器均已支持ES严格模式。</p>
+<h3 id="一、严格模式的使用"><a href="#一、严格模式的使用" class="headerlink" title="一、严格模式的使用"></a>一、严格模式的使用</h3></li>
+<li>严格模式的使用很简单,只有在代码首部加入字符串<code>use strict</code>.有两种场景,一种是全局模式,一种是局部模式.</li>
+<li><p>全局模式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">use strict</div><div class="line">var index = 10;</div><div class="line">console.log(index);</div></pre></td></tr></table></figure>
+</li>
+<li><p>执行后输出10,与非严格模式没有什么区别。</p>
+</li>
 </ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/10/04/git使用入门/" data-id="civkswsrk0002xwrkk51bv3r5" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/11/16/javascript严格模式/" data-id="civkswsqc0000xwrk7igd7m7z" class="article-share-link">Share</a>
       
       
     </footer>
@@ -137,15 +118,11 @@ git c">
     
 <nav id="article-nav">
   
-    <a href="/2016/10/04/css各种居中/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          css各种居中
-        
-      </div>
-    </a>
   
+    <a href="/2016/10/04/css各种居中/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">css各种居中</div>
+    </a>
   
 </nav>
 

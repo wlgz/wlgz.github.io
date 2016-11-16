@@ -61,6 +61,53 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-javascript严格模式" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/11/16/javascript严格模式/" class="article-date">
+  <time datetime="2016-11-16T10:32:30.000Z" itemprop="datePublished">2016-11-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/16/javascript严格模式/">javascript严格模式</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li>严格模式是由ECMA规范定义的新兴Javascript标准,第五版发布于2009年12月,为在改善错误检查功能并且标识可能不会延续<br>到未来的js脚本.ES5严格模式是限制性更强的Javascript变体,它与常规Javascript的语义不同,其分析更为严格。</li>
+<li><p>目前,除了IE6—9,其他浏览器均已支持ES严格模式。</p>
+<h3 id="一、严格模式的使用"><a href="#一、严格模式的使用" class="headerlink" title="一、严格模式的使用"></a>一、严格模式的使用</h3></li>
+<li>严格模式的使用很简单,只有在代码首部加入字符串<code>use strict</code>.有两种场景,一种是全局模式,一种是局部模式.</li>
+<li><p>全局模式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">use strict</div><div class="line">var index = 10;</div><div class="line">console.log(index);</div></pre></td></tr></table></figure>
+</li>
+<li><p>执行后输出10,与非严格模式没有什么区别。</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/11/16/javascript严格模式/" data-id="civkswsqc0000xwrk7igd7m7z" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-css各种居中" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/10/04/css各种居中/" class="article-date">
@@ -88,7 +135,7 @@
 <ol>
 <li>想要让一个子盒子在父盒子中居中显示，给父子盒子都设置定位，子绝父相，再给子盒子设置：<code>top:50% left:50%</code> 让子盒子走父盒子的一半，然后在让子盒子走自己宽高的一半，通过<code>margin-left、margin-right</code>.但是这种方法局限性强，不能灵活写数值.</li>
 <li>利用css3中伸缩盒子的属性：<code>display:flex</code>.在给子盒子设置<code>margin:auto</code>.子盒子自动居中，随意改变盒子的值都可以，这个方法比较灵活。</li>
-<li>利用css3中<code>transform</code>这个属性，同1：父子盒子都设置定位，子绝父相， 再给子盒子设置：<code>top:50% left:50%</code>,<br>在给子盒子设置transform:translate(-50%,-50%)，利用这个属性让子盒子走自己宽高的一半。 </li>
+<li>利用css3中<code>transform</code>这个属性，同1：父子盒子都设置定位，子绝父相， 再给子盒子设置：<code>top:50% left:50%</code>,<br>在给子盒子设置<code>transform:translate(-50%,-50%)</code>，利用这个属性让子盒子走自己宽高的一半。</li>
 </ol>
 </li>
 </ol>
@@ -96,7 +143,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/10/04/css各种居中/" data-id="civ8aaa3f00014orklfot40wn" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/10/04/css各种居中/" data-id="civkswsri0001xwrkol4w39w2" class="article-share-link">Share</a>
       
       
     </footer>
@@ -150,7 +197,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/10/04/git使用入门/" data-id="civ8aaa3900004orklni246qu" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/10/04/git使用入门/" data-id="civkswsrk0002xwrkk51bv3r5" class="article-share-link">Share</a>
       
       
     </footer>
@@ -177,7 +224,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a></li></ul>
     </div>
   </div>
 
@@ -188,6 +235,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2016/11/16/javascript严格模式/">javascript严格模式</a>
+          </li>
         
           <li>
             <a href="/2016/10/04/css各种居中/">css各种居中</a>
